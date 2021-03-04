@@ -1,14 +1,15 @@
 #[cfg(test)]
+#[allow(dead_code)]
 mod tests {
-    use crate::testWorkflow;
+    use crate::test_workflow;
     #[test]
-    assert_eq!(testWorkflow(1,2),5);
+    assert_eq!(test_workflow(1, 2), 5);
 }
-
-fn testWorkflow (a: i32, b: i32) -> i32 {
+#[allow(dead_code)]
+fn test_workflow(a: i32, b: i32) -> i32 {
     a + b
 }
-
-fn testWorkflow1 (a: i32, b: i32) -> i32 {
+#[allow(dead_code)]
+fn test_workflow1(a: i32, b: i32) -> i32 {
     a + b
 }
